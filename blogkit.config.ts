@@ -26,7 +26,7 @@ export default defineConfig({
     ],
     introduceHTML: `
       <p>这是一个博客</p>
-      <p>对</p>
+      <p>对.</p>
       <script>
       function myFunction() {
       document.getElementsByClassName("my-16")[0].style.display="none";
