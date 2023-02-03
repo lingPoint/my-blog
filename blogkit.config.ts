@@ -27,9 +27,11 @@ export default defineConfig({
     introduceHTML: `
       <p>xxxxxx</p>
       <p>xxxxxx</p>
+      <script>
       function myFunction() {
       document.getElementsByClassName("my-16")[0].style.display="none";
       }
+      </script>
     `,
   },
   request,
