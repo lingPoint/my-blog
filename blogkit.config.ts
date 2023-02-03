@@ -17,7 +17,7 @@ export default defineConfig({
       },
       //{
       //  name: "Twitter",
-      //  url: "https://twitter.com/_2nthony",
+      //  url: "https://my-blog-delta-sooty.vercel.app",
       // },
       {
         name: "RSS",
