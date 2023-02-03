@@ -33,7 +33,7 @@ export default defineConfig({
       <script type="text/javascript">
       window.onload = function(){
 	    //document.getElementsByClassName("my-16")[0].style.display="none";
-	    document.getElementsByClassName("my-16")[0].innerHTML = '<p>Powered by Zerox</p>
+	    document.getElementsByClassName("my-16")[0].innerHTML = '<p>Powered by Zerox</p>';
       }
       </script>
     `,
