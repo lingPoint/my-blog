@@ -29,16 +29,7 @@ export default defineConfig({
       <p id="hitokoto">
   	<a href="#" id="hitokoto_text">:D 获取中...</a>
 	</p>
-	<script>
-	  fetch('https://v1.hitokoto.cn')
-	    .then(response => response.json())
-	    .then(data => {
-	      const hitokoto = document.querySelector('#hitokoto_text')
-	      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-	      hitokoto.innerText = data.hitokoto
-	    })
-	    .catch(console.error)
-	</script>
+	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
       <script type="text/javascript">
       window.onload = function(){
 	    document.getElementsByClassName("my-16")[0].style.display="none";
