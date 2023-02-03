@@ -25,8 +25,11 @@ export default defineConfig({
       },
     ],
     introduceHTML: `
-      <p>这是一个博客</p>
-      <p>对.</p>
+      <p>对.这是一个博客</p>
+      <p id="hitokoto">
+  	<a href="#" id="hitokoto_text">:D 获取中...</a>
+	</p>
+	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
       <script type="text/javascript">
       window.onload = function(){
 	    document.getElementsByClassName("my-16")[0].style.display="none";
