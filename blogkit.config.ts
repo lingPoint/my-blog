@@ -28,7 +28,7 @@ export default defineConfig({
       <p>xxxxxx</p>
       <p>xxxxxx</p>
       <script>
-        document.getElementsByClassName("my-16")[0].style.display="none"
+        document.getElementsByClassName("my-16")[0].style.display="none";
       </script>
     `,
   },
