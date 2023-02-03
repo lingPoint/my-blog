@@ -4,9 +4,9 @@ import { theme } from "blogkit-theme-minimal";
 
 export default defineConfig({
   siteConfig: {
-    title: "Blogkit Notion",
-    author: "2nthony",
-    url: "https://blogkit.vercel.app",
+    title: "Zerox",
+    author: "Zerox",
+    url: "https://my-blog-delta-sooty.vercel.app",
   },
   theme,
   request,
