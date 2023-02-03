@@ -32,7 +32,8 @@ export default defineConfig({
 	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
       <script type="text/javascript">
       window.onload = function(){
-	    document.getElementsByClassName("my-16")[0].style.display="none";
+	    //document.getElementsByClassName("my-16")[0].style.display="none";
+	    document.getElementsByClassName("my-16")[0].innerHTML = '<p>Powered by Zerox</p>
       }
       </script>
     `,
