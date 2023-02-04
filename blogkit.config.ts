@@ -6,7 +6,7 @@ export default defineConfig({
   siteConfig: {
     title: "Zerox",
     author: "Zerox",
-    url: "https://my-blog-delta-sooty.vercel.app",
+    url: "https://zerox.cc/",
   },
   theme,
   themeConfig: {
