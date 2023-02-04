@@ -27,7 +27,7 @@ export default defineConfig({
     introduceHTML: `
       <p>对.这是一个博客</p>
       <p id="hitokoto">
-  	<a href="#" id="hitokoto_text">:D 获取中...</a>
+  	<a href="#" id="hitokoto_text"></a>
 	</p>
 	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
       <script type="text/javascript">
