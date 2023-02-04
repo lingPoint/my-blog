@@ -11,7 +11,6 @@
   "dependencies": {
     "blogkit": "*",
     "blogkit-notion": "*",
-    //"blogkit-theme-minimal": "^0.3.1",
     "blogkit-theme-minimal": "^0.3.7",
     "next": "12.1.0",
     "react": "17.0.2",
