@@ -5,7 +5,6 @@ export function Footer() {
       <a target="_blank" href="https://github.com/lingPoint">
         Zerox
       </a>
-      .
     </div>
   )
 }
