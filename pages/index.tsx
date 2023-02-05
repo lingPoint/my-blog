@@ -1,5 +1,9 @@
 import { blogkit } from "./_app";
 
-export default blogkit.config.theme.Home;
-
 export const getStaticProps = blogkit.getHomePageStaticProps;
+
+export function Homee() {
+  return <div>Welcome to Next.js!</div>
+}
+
+export default blogkit.config.theme.Home,Homee();
