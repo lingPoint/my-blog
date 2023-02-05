@@ -1,11 +1,80 @@
 import { blogkit } from "./_app";
 
-export default blogkit.config.theme.Home;
+import type { HomePageProps, Post } from 'blogkit'
+import { Container } from './Container'
+import { Footer } from './Footer'
+import Link from 'next/link'
+import Head from 'next/head'
+import { date } from '../date'
 
-export const getStaticProps = blogkit.getHomePageStaticProps;
+export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
+  return (
+    <Container>
+      <Head>
+        <title>{siteConfig.title}</title>
+      </Head>
 
-function HomePage() {
-  return <div>Welcome to Next.js!</div>
+      <h1 className="text-4xl font-extrabold">{siteConfig.title}</h1>
+
+      {themeConfig?.links && (
+        <div className="flex gap-2">
+          {themeConfig?.links?.map((link: any) => {
+            return (
+              <Link href={link.url} key={link.url}>
+                <a target="_blank">{link.name}</a>
+              </Link>
+            )
+          })}
+        </div>
+      )}
+
+      <article
+        className="post-body"
+        dangerouslySetInnerHTML={{ __html: themeConfig?.introduceHTML }}
+      ></article>
+
+      <div className="mt-12 mb-12">
+        <ul className="pl-0">
+          {posts.map((post) => {
+            return <PostItem key={post.attributes.slug} post={post} />
+          })}
+        </ul>
+      </div>
+
+      <div className="my-16">
+       // <Footer />
+      </div>
+    </Container>
+  )
 }
 
-export default HomePage;
+function PostItem({ post }: { post: Post }) {
+  return (
+    <li className="post-item my-6 list-none pl-0">
+      <h3 className="text-2xl font-bold mb-2">
+        <Link href={'/' + post.attributes.slug}>
+          <a className="hover:underline no-underline cursor-pointer">
+            {post.attributes.title}
+          </a>
+        </Link>
+      </h3>
+
+      {post.attributes.description && (
+        <p className="text-slate-500 mb-2">{post.attributes.description}</p>
+      )}
+      <time className="text-slate-400 text-sm">
+        {date(post.attributes.date)}
+      </time>
+    </li>
+  )
+}
+
+// export default blogkit.config.theme.Home;
+
+// export const getStaticProps = blogkit.getHomePageStaticProps;
+
+// function HomePage() {
+//   return <div>Welcome to Next.js!</div>
+// }
+
+// export default HomePage;
