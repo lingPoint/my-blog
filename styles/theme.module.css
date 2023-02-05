@@ -1,0 +1,54 @@
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+}
+
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.posts {
+  margin-top: 3rem;
+}
+.posts ul {
+  padding-left: 0;
+}
+.posts li {
+  list-style: none;
+  margin: 1rem 0;
+}
+.posts a {
+  color: #0070f3;
+}
+
+.postBody {
+  margin-top: 4rem;
+}
+.postBody img {
+  max-width: 100%;
+}
+.postBody a {
+  color: #0070f3;
+}
