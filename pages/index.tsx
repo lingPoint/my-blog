@@ -7,4 +7,3 @@ export function Homee() {
 }
 
 export default blogkit.config.theme.Home;
-export default Homee;
