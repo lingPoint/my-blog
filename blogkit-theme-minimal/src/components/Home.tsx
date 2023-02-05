@@ -10,7 +10,7 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
     <Container>
       <Head>
         <title>{siteConfig.title}</title>
-        <link rel="icon" href="https://avatars.githubusercontent.com/u/44696270?s=96&v=4">
+        <link rel="icon" href="./vercel.svg">
       </Head>
 
       <h1 className="text-4xl font-extrabold">{siteConfig.title}</h1>
