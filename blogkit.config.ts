@@ -1,6 +1,7 @@
 import { defineConfig } from "blogkit";
 import { request } from "blogkit-notion";
-import { theme } from "blogkit-theme-minimal";
+//import { theme } from "blogkit-theme-minimal";
+import { theme } from "./blogkit/theme";
 
 export default defineConfig({
   siteConfig: {
