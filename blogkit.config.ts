@@ -8,21 +8,7 @@ export default defineConfig({
     author: "Zerox",
     url: "https://zerox.cc/",
   },
-  theme: {
-  introduceHTML: `
-      <p>对.这是一个博客</p>
-      <p id="hitokoto">
-  	<a href="#" id="hitokoto_text"></a>
-	</p>
-	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-      <script type="text/javascript">
-//       window.onload = function(){
-// 	    //document.getElementsByClassName("my-16")[0].style.display="none";
-// 	    document.getElementsByClassName("my-16")[0].innerHTML = '<p>Powered by Zerox</p>';
-//       }
-       </script>
-    `,
-  },
+  theme: {},
   themeConfig: {
     links: [
       {
