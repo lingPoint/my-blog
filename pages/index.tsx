@@ -6,4 +6,5 @@ export function Homee() {
   return <div>Welcome to Next.js!</div>
 }
 
-export default blogkit.config.theme.Home,Homee;
+export default blogkit.config.theme.Home;
+export default Homee;
