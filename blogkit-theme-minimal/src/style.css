@@ -230,4 +230,8 @@ pre.languagetypescript {
 .post-body .red {
   @apply text-rose-600;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 /* colors end */
