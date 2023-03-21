@@ -10,7 +10,7 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
     <Container>
       <Head>
         <title>{siteConfig.title}</title>
-        <link rel="icon" href="https://static.convertio.co/favicon.ico" />
+        <link rel="icon" href="https://raw.githubusercontent.com/lingPoint/my-blog/main/blogkit-theme-minimal/src/favicon.ico" />
       </Head>
 
       <h1 className="text-4xl font-extrabold">{siteConfig.title}</h1>
