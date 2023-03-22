@@ -15,9 +15,9 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
       </Head>
 
       <div style={{ display: 'flex', alignItems: 'center' }} className="flex gap-2">
-  <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style={logoStyle} />
-  <h1 className="text-4xl font-extrabold" style={{ marginBottom: 0 }}>Zerox</h1>
-</div>
+      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style={logoStyle} />
+      <h1 className="text-4xl font-extrabold" style={{ marginBottom: 0 }}>{siteConfig.title}</h1>
+      </div>
 
       {themeConfig?.links && (
         <div className="flex gap-2">
