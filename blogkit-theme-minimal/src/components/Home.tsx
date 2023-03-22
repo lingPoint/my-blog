@@ -4,7 +4,6 @@ import { Footer } from './Footer'
 import Link from 'next/link'
 import Head from 'next/head'
 import { date } from '../date'
-import { CSSProperties } from 'react'
 
 export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
   return (
@@ -15,7 +14,7 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
       </Head>
 
       <div style={{ display: 'flex', alignItems: 'center' }} className="flex gap-2">
-      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style={{ width: '100px', height: '100px', borderRadius: '50%' }} />
+      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style={{ width: '50px', height: '50px', borderRadius: '50%' }} />
       <h1 className="text-4xl font-extrabold" style={{ marginBottom: 0 }}>{siteConfig.title}</h1>
       </div>
 
@@ -70,8 +69,4 @@ function PostItem({ post }: { post: Post }) {
       </time>
     </li>
   )
-}
-const logoStyle: CSSProperties = {
-  height: '100px',
-  width: '100px'
 }
