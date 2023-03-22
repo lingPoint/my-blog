@@ -13,9 +13,9 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
         <link rel="icon" href="https://raw.githubusercontent.com/lingPoint/my-blog/main/blogkit-theme-minimal/src/favicon.ico" />
       </Head>
 
-      <div style="display: flex;align-items: center;" class="flex gap-2">
-      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style="height: 100px;width: 100px;">
-      <h1 class="text-4xl font-extrabold" style="margin-bottom: unset;">{siteConfig.title}</h1>
+      <div style="display: flex; align-items: center;" className="flex gap-2">
+      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style="height: 100px; width: 100px;">
+      <h1 className="text-4xl font-extrabold" style="margin-bottom: 0;">{siteConfig.title}</h1>
       </div>
 
       {themeConfig?.links && (
