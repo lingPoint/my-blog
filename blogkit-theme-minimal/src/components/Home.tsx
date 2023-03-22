@@ -13,11 +13,7 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
         <link rel="icon" href="https://raw.githubusercontent.com/lingPoint/my-blog/main/blogkit-theme-minimal/src/favicon.ico" />
       </Head>
 
-      <div className="flex items-center">
-  <img href="https://avatars.githubusercontent.com/u/44696270?s=40&v=4" alt="Logo" className="w-10 h-10 mr-2" />
-  <h1 className="text-4xl font-extrabold">{siteConfig.name}</h1>
-</div>
-
+      <h1 className="text-4xl font-extrabold">{siteConfig.title}</h1>
 
       {themeConfig?.links && (
         <div className="flex gap-2">
