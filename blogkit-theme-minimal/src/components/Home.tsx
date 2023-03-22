@@ -4,6 +4,7 @@ import { Footer } from './Footer'
 import Link from 'next/link'
 import Head from 'next/head'
 import { date } from '../date'
+import { CSSProperties } from 'react'
 
 export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
   return (
@@ -13,10 +14,10 @@ export function Home({ posts, siteConfig, themeConfig }: HomePageProps) {
         <link rel="icon" href="https://raw.githubusercontent.com/lingPoint/my-blog/main/blogkit-theme-minimal/src/favicon.ico" />
       </Head>
 
-      <div style="display: flex; align-items: center;" className="flex gap-2">
-      <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style="height: 100px; width: 100px;">
-      <h1 className="text-4xl font-extrabold" style="margin-bottom: 0;">{siteConfig.title}</h1>
-      </div>
+      <div style={{ display: 'flex', alignItems: 'center' }} className="flex gap-2">
+  <img src="https://avatars.githubusercontent.com/u/44696270?v=4" alt="Logo" style={logoStyle} />
+  <h1 className="text-4xl font-extrabold" style={{ marginBottom: 0 }}>Zerox</h1>
+</div>
 
       {themeConfig?.links && (
         <div className="flex gap-2">
@@ -69,4 +70,8 @@ function PostItem({ post }: { post: Post }) {
       </time>
     </li>
   )
+}
+const logoStyle: CSSProperties = {
+  height: '100px',
+  width: '100px'
 }
